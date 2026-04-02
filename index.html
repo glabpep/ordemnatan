@@ -1,4 +1,3 @@
- 
 
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -170,11 +169,11 @@
                             <small style="color:#666">3 ML</small><br>
                             <button class="btn-info" onclick="abrirInfo(5)">+ informações</button>
                         </td>
-                        <td><span class="status-espera">EM ESPERA</span></td>
+                        <td><span class="status-disponivel">DISPONÍVEL</span></td>
                         <td style="white-space: nowrap;">R$ 40.00</td>
                         <td>
-                            <button onclick="adicionar(5)" disabled class="btn-add">
-                                ✖
+                            <button onclick="adicionar(5)"  class="btn-add">
+                                +
                             </button>
                         </td>
                     </tr>
@@ -365,11 +364,11 @@
                             <small style="color:#666">70 MG</small><br>
                             <button class="btn-info" onclick="abrirInfo(18)">+ informações</button>
                         </td>
-                        <td><span class="status-disponivel">DISPONÍVEL</span></td>
+                        <td><span class="status-espera">EM ESPERA</span></td>
                         <td style="white-space: nowrap;">R$ 756.00</td>
                         <td>
-                            <button onclick="adicionar(18)"  class="btn-add">
-                                +
+                            <button onclick="adicionar(18)" disabled class="btn-add">
+                                ✖
                             </button>
                         </td>
                     </tr>
@@ -470,11 +469,11 @@
                             <small style="color:#666">1 MG</small><br>
                             <button class="btn-info" onclick="abrirInfo(25)">+ informações</button>
                         </td>
-                        <td><span class="status-disponivel">DISPONÍVEL</span></td>
+                        <td><span class="status-espera">EM ESPERA</span></td>
                         <td style="white-space: nowrap;">R$ 686.64</td>
                         <td>
-                            <button onclick="adicionar(25)"  class="btn-add">
-                                +
+                            <button onclick="adicionar(25)" disabled class="btn-add">
+                                ✖
                             </button>
                         </td>
                     </tr>
@@ -530,11 +529,11 @@
                             <small style="color:#666">80 MG</small><br>
                             <button class="btn-info" onclick="abrirInfo(29)">+ informações</button>
                         </td>
-                        <td><span class="status-disponivel">DISPONÍVEL</span></td>
+                        <td><span class="status-espera">EM ESPERA</span></td>
                         <td style="white-space: nowrap;">R$ 820.00</td>
                         <td>
-                            <button onclick="adicionar(29)"  class="btn-add">
-                                +
+                            <button onclick="adicionar(29)" disabled class="btn-add">
+                                ✖
                             </button>
                         </td>
                     </tr>
@@ -680,11 +679,11 @@
                             <small style="color:#666">10 MG</small><br>
                             <button class="btn-info" onclick="abrirInfo(39)">+ informações</button>
                         </td>
-                        <td><span class="status-disponivel">DISPONÍVEL</span></td>
+                        <td><span class="status-espera">EM ESPERA</span></td>
                         <td style="white-space: nowrap;">R$ 484.47</td>
                         <td>
-                            <button onclick="adicionar(39)"  class="btn-add">
-                                +
+                            <button onclick="adicionar(39)" disabled class="btn-add">
+                                ✖
                             </button>
                         </td>
                     </tr>
@@ -995,11 +994,11 @@
                             <small style="color:#666">10 MG</small><br>
                             <button class="btn-info" onclick="abrirInfo(60)">+ informações</button>
                         </td>
-                        <td><span class="status-disponivel">DISPONÍVEL</span></td>
+                        <td><span class="status-espera">EM ESPERA</span></td>
                         <td style="white-space: nowrap;">R$ 522.27</td>
                         <td>
-                            <button onclick="adicionar(60)"  class="btn-add">
-                                +
+                            <button onclick="adicionar(60)" disabled class="btn-add">
+                                ✖
                             </button>
                         </td>
                     </tr>
@@ -1384,9 +1383,7 @@
                 msg += linhaItem + "%0A"; 
             });
 
-            if (temBrinde) {
-                msg += "• BRINDE CUPOM BRUNA (BACTERIOSTATIC WATER 7 ML) - R$ 0,00%0A";
-            }
+            
 
             if(cupomAtivo) msg += "%0A🏷️ *CUPOM:* " + cupomAtivo.nome + " (-R$ " + descTotal.toFixed(2) + ")";
             msg += "%0A🚚 *FRETE:* " + freteD.toUpperCase();
